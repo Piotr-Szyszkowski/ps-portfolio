@@ -10,4 +10,26 @@
 
 .Home__Main-pic {
   width: -webkit-fill-available;
+  position: relative;
+}
+.temp-text-green {
+  color: green;
+  font-size: larger;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  top: 0;
+  left: 0;
+}
+
+.temp-text-red {
+  color: red;
+  font-size: larger;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  top: 0;
+  left: 0;
 }
