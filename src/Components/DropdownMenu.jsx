@@ -9,12 +9,15 @@ const DropdownMenu = () => {
   const dropDownOff = () => {
     setDropdownShowing(false);
   };
-
+  const dropDownToggle = () => {
+    setDropdownShowing(!dropdownShowing);
+  };
   return (
     <div
       className="DropdownMenu"
       onMouseEnter={dropDownOn}
       onMouseLeave={dropDownOff}
+      onClick={dropDownToggle}
     >
       <img
         className="DropdownMenu__MenuIcon"
