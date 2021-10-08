@@ -1,8 +1,24 @@
 .DropdownMenu {
+  position: relative;
+  width: 5em;
 }
 
 .DropdownMenu__MenuIcon {
   width: 2em;
+}
+
+.DropdownMenuContent {
+  position: absolute;
+  z-index: 1;
+}
+.DropdownMenuContent__Item {
+  background-color: rgb(179, 226, 175);
+  padding: 2px;
+}
+
+.DropdownMenuContent__Item:hover {
+  background-color: rgb(80, 214, 67);
+  color: aliceblue;
 }
 
 .Navbar {
@@ -11,6 +27,11 @@
   padding-left: 1em;
   padding-right: 1em;
 }
+
+.Navbar__MainPic {
+  width: 10em;
+}
+
 .Home {
   // background-image: url("../src/Images/Me\ in\ Rome.jpg");
 }

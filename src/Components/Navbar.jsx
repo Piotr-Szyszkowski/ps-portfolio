@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 
 const Navbar = () => {
   return (
     <div className="Navbar">
-      {/* <p>About me</p>
-      <p>My work</p>
-      <p>Contact</p> */}
+      <Link to="/">
+        <img className="Navbar__MainPic" src="/Images/PS-placeholder.png" />
+      </Link>
       <DropdownMenu />
     </div>
   );

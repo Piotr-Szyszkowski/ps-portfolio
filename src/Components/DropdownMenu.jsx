@@ -3,20 +3,29 @@ import DropdownMenuContent from "./DropdownMenuContent";
 
 const DropdownMenu = () => {
   const [dropdownShowing, setDropdownShowing] = useState(false);
-  const toggleDropdownShowing = () => {
-    setDropdownShowing(!dropdownShowing);
+  const dropDownOn = () => {
+    setDropdownShowing(true);
+  };
+  const dropDownOff = () => {
+    setDropdownShowing(false);
   };
 
   return (
-    <div className="DropdownMenu">
+    <div
+      className="DropdownMenu"
+      onMouseEnter={dropDownOn}
+      onMouseLeave={dropDownOff}
+    >
       <img
         className="DropdownMenu__MenuIcon"
-        onClick={toggleDropdownShowing}
         src={
           dropdownShowing ? "/Images/closed.png" : "/Images/Hamburger_icon.png"
         }
       />
-      <DropdownMenuContent dropdownShowing={dropdownShowing} />
+      <DropdownMenuContent
+        dropdownShowing={dropdownShowing}
+        setDropdownShowing={setDropdownShowing}
+      />
     </div>
   );
 };
