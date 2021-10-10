@@ -1,9 +1,7 @@
-import { useState } from "react";
-
 const Home = () => {
   return (
     <div className="Home">
-      <img className="Home__Main-pic" src="/Images/me-in-rome.jpg" />
+      <p className="temp__p">s</p>
     </div>
   );
 };

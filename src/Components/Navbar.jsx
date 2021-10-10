@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <Link to="/">
-        <img className="Navbar__MainPic" src="/Images/PS-placeholder.png" />
+        <img className="Navbar__MainPic" src="/Images/PS-placeholder_v3.png" />
       </Link>
       <DropdownMenu />
     </div>

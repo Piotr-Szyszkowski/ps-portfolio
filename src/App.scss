@@ -10,8 +10,9 @@
 }
 
 .DropdownMenu__MenuIcon {
-  width: 2em;
-  margin-bottom: 1em;
+  width: 35px;
+  height: 35px;
+  margin-right: 1;
 }
 
 .DropdownMenuContent {
@@ -36,6 +37,8 @@
   background-color: rgb(80, 214, 67);
   color: aliceblue;
 }
+.Footer {
+}
 
 .Navbar {
   display: flex;
@@ -43,16 +46,15 @@
 }
 
 .Navbar__MainPic {
-  width: 15em;
+  width: 12em;
 }
 
 .Home {
-  // background-image: url("../src/Images/Me\ in\ Rome.jpg");
-}
-
-.Home__Main-pic {
-  width: -webkit-fill-available;
-  position: relative;
+  background-image: url("/Images/main_small_placeholder.png");
+  background-size: cover;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 //the color - 2cff21
