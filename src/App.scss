@@ -26,17 +26,19 @@
 }
 
 .DropdownMenuContent {
+  border: solid #2cff21 1px;
   width: fit-content;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   padding-left: 10px;
-  padding-right: 3px;
+  padding-right: 7px;
   flex-direction: column;
   position: absolute;
   z-index: 1;
   margin-top: 2em;
   right: 1em;
   top: 1em;
+  text-align: center;
 }
 .DropdownMenuContent__Item {
   font-family: "Rexila";
@@ -44,8 +46,8 @@
   background-color: #2cff21;
   border-radius: 10px;
   padding: 2px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding-right: 6px;
+  padding-left: 6px;
   max-height: fit-content;
 }
 
@@ -61,10 +63,11 @@
 .Footer {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 30px;
 }
 
 .Footer__Image {
-  height: 40px;
+  height: 37px;
   margin: 5px 5px 5px 5px;
 }
 
@@ -78,9 +81,9 @@
 }
 
 .Home {
-  background-image: url("/Images/main_small_placeholder.png");
+  background-image: url("/Images/me_02_small_320.png");
   background-size: cover;
-  min-height: 500px;
+  min-height: 587px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -90,18 +93,39 @@
   flex-direction: column;
 }
 
-.Home__BottomText {
+.Home__MainText {
+  margin-top: 7px;
   font-family: "Rexila";
-  font-size: 28px;
+  font-size: 23px;
   color: aliceblue;
   text-align: center;
 }
 
-.Home__MainText {
+.Home__MyStack__Large {
+}
+
+.Home__MyStack__Text {
   font-family: "Rexila";
-  font-size: 28px;
+  font-size: 20px;
   color: aliceblue;
   text-align: center;
+}
+
+.Home__MyStack {
+}
+
+.Home__MyStack__Large__Logo {
+  height: 60px;
+  border-radius: 5px;
+  border: solid rgb(80, 214, 67);
+  margin: 0px 5px 0px 5px;
+}
+
+.Home__MyStack__Medium__Logo {
+  height: 40px;
+  border-radius: 5px;
+  border: solid rgb(80, 214, 67);
+  margin: 5px 5px 0px 5px;
 }
 
 //the color - 2cff21

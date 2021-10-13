@@ -5,6 +5,7 @@ const DropdownMenuContent = (props) => {
   const hideDropdown = () => {
     setDropdownShowing(false);
   };
+
   if (dropdownShowing) {
     return (
       <div className="DropdownMenuContent">
