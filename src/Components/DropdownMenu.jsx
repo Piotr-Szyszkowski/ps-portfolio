@@ -24,6 +24,7 @@ const DropdownMenu = () => {
         src={
           dropdownShowing ? "/Images/closed.png" : "/Images/Hamburger_icon.png"
         }
+        alt="Menu icon"
       />
       <DropdownMenuContent
         dropdownShowing={dropdownShowing}

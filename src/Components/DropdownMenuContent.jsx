@@ -8,17 +8,17 @@ const DropdownMenuContent = (props) => {
   if (dropdownShowing) {
     return (
       <div className="DropdownMenuContent">
-        <Link to="/aboutme">
+        <Link className="DropdownMenuContent__Link" to="/aboutme">
           <p onClick={hideDropdown} className="DropdownMenuContent__Item">
             About me
           </p>
         </Link>
-        <Link to="/mywork">
+        <Link className="DropdownMenuContent__Link" to="/mywork">
           <p onClick={hideDropdown} className="DropdownMenuContent__Item">
             My work
           </p>
         </Link>
-        <Link to="/contact">
+        <Link className="DropdownMenuContent__Link" to="/contact">
           <p onClick={hideDropdown} className="DropdownMenuContent__Item">
             Contact
           </p>

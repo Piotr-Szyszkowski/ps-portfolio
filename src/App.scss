@@ -1,6 +1,16 @@
+@font-face {
+  font-family: Rexila;
+  src: url("./Fonts/rexlia_rg.otf") format("opentype");
+}
+
 .AppWindow {
   background-color: black;
   color: #2cff21;
+}
+
+.about_text_temp {
+  font-family: "Rexila";
+  color: aliceblue;
 }
 
 .DropdownMenu {
@@ -17,9 +27,10 @@
 
 .DropdownMenuContent {
   width: fit-content;
-  background-color: black;
-  padding-left: 4px;
-  padding-right: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 3px;
   flex-direction: column;
   position: absolute;
   z-index: 1;
@@ -28,16 +39,33 @@
   top: 1em;
 }
 .DropdownMenuContent__Item {
+  font-family: "Rexila";
+  color: black;
   background-color: #2cff21;
+  border-radius: 10px;
   padding: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
   max-height: fit-content;
+}
+
+.DropdownMenuContent__Link {
+  text-decoration: none;
 }
 
 .DropdownMenuContent__Item:hover {
   background-color: rgb(80, 214, 67);
   color: aliceblue;
 }
+
 .Footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Footer__Image {
+  height: 40px;
+  margin: 5px 5px 5px 5px;
 }
 
 .Navbar {
@@ -55,10 +83,25 @@
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
-.temp__p {
-  display: none;
+.Home__BottomText {
+  font-family: "Rexila";
+  font-size: 28px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.Home__MainText {
+  font-family: "Rexila";
+  font-size: 28px;
+  color: aliceblue;
+  text-align: center;
 }
 
 //the color - 2cff21

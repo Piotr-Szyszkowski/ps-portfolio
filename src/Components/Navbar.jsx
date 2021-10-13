@@ -5,7 +5,11 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <Link to="/">
-        <img className="Navbar__MainPic" src="/Images/PS-placeholder_v3.png" />
+        <img
+          className="Navbar__MainPic"
+          src="/Images/PS-batmfa-compres.png"
+          alt="Piotr Szyszkowski Logo"
+        />
       </Link>
       <DropdownMenu />
     </div>
