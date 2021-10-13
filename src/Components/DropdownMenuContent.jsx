@@ -9,21 +9,24 @@ const DropdownMenuContent = (props) => {
   if (dropdownShowing) {
     return (
       <div className="DropdownMenuContent">
-        <Link className="DropdownMenuContent__Link" to="/aboutme">
-          <p onClick={hideDropdown} className="DropdownMenuContent__Item">
-            About me
-          </p>
-        </Link>
-        <Link className="DropdownMenuContent__Link" to="/mywork">
-          <p onClick={hideDropdown} className="DropdownMenuContent__Item">
-            My work
-          </p>
-        </Link>
-        <Link className="DropdownMenuContent__Link" to="/contact">
-          <p onClick={hideDropdown} className="DropdownMenuContent__Item">
-            Contact
-          </p>
-        </Link>
+        <div className="DropdownMenuContent__Invisible">I am invisible</div>
+        <div className="DropdownMenuContent__Visible">
+          <Link className="DropdownMenuContent__Link" to="/aboutme">
+            <p onClick={hideDropdown} className="DropdownMenuContent__Item">
+              About me
+            </p>
+          </Link>
+          <Link className="DropdownMenuContent__Link" to="/mywork">
+            <p onClick={hideDropdown} className="DropdownMenuContent__Item">
+              My work
+            </p>
+          </Link>
+          <Link className="DropdownMenuContent__Link" to="/contact">
+            <p onClick={hideDropdown} className="DropdownMenuContent__Item">
+              Contact
+            </p>
+          </Link>
+        </div>
       </div>
     );
   } else {

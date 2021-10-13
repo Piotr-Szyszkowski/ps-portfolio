@@ -9,6 +9,7 @@ const DropdownMenu = () => {
   const dropDownOff = () => {
     setDropdownShowing(false);
   };
+
   const dropDownToggle = () => {
     setDropdownShowing(!dropdownShowing);
   };

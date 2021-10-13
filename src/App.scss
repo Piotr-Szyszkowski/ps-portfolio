@@ -26,20 +26,32 @@
 }
 
 .DropdownMenuContent {
+  z-index: 1;
+  position: absolute;
+  right: 1em;
+  top: 40px;
+}
+
+.DropdownMenuContent__Visible {
   border: solid #2cff21 1px;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
+
   padding-left: 10px;
   padding-right: 7px;
   flex-direction: column;
-  position: absolute;
-  z-index: 1;
-  margin-top: 2em;
-  right: 1em;
-  top: 1em;
+
   text-align: center;
 }
+
+.DropdownMenuContent__Invisible {
+  opacity: 0;
+  &:hover {
+    cursor: default;
+  }
+}
+
 .DropdownMenuContent__Item {
   font-family: "Rexila";
   color: black;
