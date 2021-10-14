@@ -8,9 +8,9 @@
   color: #2cff21;
 }
 
-.about_text_temp {
+.AboutMe__MainText {
   font-family: "Rexila";
-  color: aliceblue;
+  color: white;
 }
 
 .DropdownMenu {
@@ -83,15 +83,6 @@
   margin: 5px 5px 5px 5px;
 }
 
-.Navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.Navbar__MainPic {
-  width: 12em;
-}
-
 .Home {
   background-image: url("/Images/me_02_small_320.png");
   background-size: cover;
@@ -140,4 +131,12 @@
   margin: 5px 5px 0px 5px;
 }
 
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar__MainPic {
+  width: 12em;
+}
 //the color - 2cff21
