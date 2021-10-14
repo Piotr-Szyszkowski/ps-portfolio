@@ -3,9 +3,16 @@
   src: url("./Fonts/rexlia_rg.otf") format("opentype");
 }
 
+#root {
+  height: 100%;
+  margin: 0;
+}
+
 .AppWindow {
   background-color: black;
   color: #2cff21;
+  height: 100%;
+  margin: 0;
 }
 
 .AboutMe__MainText {
@@ -74,13 +81,16 @@
 
 .Footer {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 30px;
+  justify-content: flex-end;
+  margin-top: 40px;
 }
 
 .Footer__Image {
   height: 37px;
   margin: 5px 5px 5px 5px;
+}
+.Footer__Link {
+  margin-left: 25px;
 }
 
 .Home {
@@ -138,5 +148,19 @@
 
 .Navbar__MainPic {
   width: 12em;
+}
+
+$medium: 540px;
+$large: 945px;
+@media (min-width: $medium) {
+  .Home {
+    background-image: url("/Images/me_02_medium_540.png");
+  }
+}
+
+@media (min-width: $large) {
+  .Home {
+    background-image: url("/Images/me_02_medium_540.png");
+  }
 }
 //the color - 2cff21

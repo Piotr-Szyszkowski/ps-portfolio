@@ -1,4 +1,5 @@
 const Home = () => {
+  console.log(window.innerWidth);
   return (
     <div className="Home">
       <p className="Home__MainText">

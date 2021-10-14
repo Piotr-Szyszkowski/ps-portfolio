@@ -3,6 +3,7 @@ const Footer = () => {
     <div className="Footer">
       {/*eslint-disable-next-line */}
       <a
+        className="Footer__Link"
         href="https://www.linkedin.com/in/piotr-szyszkowski-7b1a78101/"
         target="_blank"
       >
@@ -13,7 +14,11 @@ const Footer = () => {
         />
       </a>
       {/*eslint-disable-next-line */}
-      <a href="https://github.com/Piotr-Szyszkowski" target="_blank">
+      <a
+        className="Footer__Link"
+        href="https://github.com/Piotr-Szyszkowski"
+        target="_blank"
+      >
         <img
           className="Footer__Image"
           src="/Images/GitHub_Icon.png"
