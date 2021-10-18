@@ -1,13 +1,18 @@
 const Home = () => {
-  console.log(window.innerWidth);
   return (
     <div className="Home">
       <p className="Home__MainText">
         Hello! <br /> I am Piotr <br /> an aspiring web developer
       </p>
-
+      <div className="Home__MainPictureContainer">
+        <img
+          className="Home__MainPicture"
+          src="/Images/me_01.png"
+          alt="Picture of Piotr Smiling"
+        />
+      </div>
       <div className="Home__MyStack">
-        <p className="Home__MyStack__Text">My tech stack:</p>
+        <p className="Home__MyStack__Text">My tools :</p>
         <div className="Home__MyStack__Large">
           <img
             className="Home__MyStack__Large__Logo"
@@ -25,7 +30,7 @@ const Home = () => {
             alt="CSS Logo"
           />
         </div>
-        <div className="Home__MyStack__Large">
+        <div className="Home__MyStack__Medium">
           <img
             className="Home__MyStack__Medium__Logo"
             src="/Images/nodejs_logo.png"

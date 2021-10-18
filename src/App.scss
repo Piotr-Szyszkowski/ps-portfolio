@@ -3,12 +3,11 @@
   src: url("./Fonts/rexlia_rg.otf") format("opentype");
 }
 
-#root {
-  height: 100%;
-  margin: 0;
-}
-
 .AppWindow {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
   background-color: black;
   color: #2cff21;
   height: 100%;
@@ -80,6 +79,7 @@
 }
 
 .Footer {
+  width: 95vw;
   display: flex;
   justify-content: flex-end;
   margin-top: 40px;
@@ -90,20 +90,26 @@
   margin: 5px 5px 5px 5px;
 }
 .Footer__Link {
-  margin-left: 25px;
+  margin-left: 2vw;
 }
 
 .Home {
-  background-image: url("/Images/me_02_small_320.png");
-  background-size: cover;
-  min-height: 587px;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-content: space-between;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+
+.Home__MainPicture {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  // margin-left: 1em;
+}
+
+.Home__MainPictureContainer {
+  max-width: 500px;
 }
 
 .Home__MainText {
@@ -115,6 +121,30 @@
 }
 
 .Home__MyStack__Large {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+}
+
+.Home__MyStack__Large__Logo {
+  height: 60px;
+  border-radius: 5px;
+  border: solid rgb(80, 214, 67);
+  margin: 0px 2% 0px 2%;
+}
+
+.Home__MyStack__Medium {
+  margin-top: 20px;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+}
+
+.Home__MyStack__Medium__Logo {
+  height: 40px;
+  border-radius: 5px;
+  border: solid rgb(80, 214, 67);
+  margin: 0px 2vw 0px 2vw;
 }
 
 .Home__MyStack__Text {
@@ -127,40 +157,22 @@
 .Home__MyStack {
 }
 
-.Home__MyStack__Large__Logo {
-  height: 60px;
-  border-radius: 5px;
-  border: solid rgb(80, 214, 67);
-  margin: 0px 5px 0px 5px;
-}
-
-.Home__MyStack__Medium__Logo {
-  height: 40px;
-  border-radius: 5px;
-  border: solid rgb(80, 214, 67);
-  margin: 5px 5px 0px 5px;
-}
-
 .Navbar {
   display: flex;
   justify-content: space-between;
+  width: 95vw;
 }
 
 .Navbar__MainPic {
   width: 12em;
 }
 
-$medium: 540px;
-$large: 945px;
-@media (min-width: $medium) {
-  .Home {
-    background-image: url("/Images/me_02_medium_540.png");
-  }
-}
+$large: 1050px;
 
 @media (min-width: $large) {
-  .Home {
-    background-image: url("/Images/me_02_medium_540.png");
+  .Navbar {
+    width: 1000px;
+    margin: auto;
   }
 }
 //the color - 2cff21
