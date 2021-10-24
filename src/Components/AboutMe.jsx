@@ -30,6 +30,20 @@ const AboutMe = () => {
         </a>
         full-stack coding bootcamp.
       </p>
+      <p className="AboutMe__Title">A FATHER</p>
+      <p className="AboutMe__SectionText">
+        When I first held my son, Adam in my arms I knew right away life has
+        changed forever. Looking at his face makes me realize how precious our
+        time is, gives me the strength to keep going and makes me try to be the
+        best version of myself every single day.
+      </p>
+      <p className="AboutMe__Title">A DREAMER</p>
+      <p className="AboutMe__SectionText">
+        Apart from loving all things fantasy, sci-fi and superhero I strongly
+        believe that nothing is beyond our reach. Everything is achevable with a
+        lot of faith and determination, hard work and a bit of luck.
+        <br /> “Do, or do not. There is no try.” - Jedi Master Yoda
+      </p>
     </div>
   );
 };
