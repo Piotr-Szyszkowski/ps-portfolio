@@ -3,6 +3,26 @@
   src: url("./Fonts/rexlia_rg.otf") format("opentype");
 }
 
+.NavGrid__Invisible {
+  grid-area: NavGrid__Invisible;
+}
+
+.NavGrid__AboutMe {
+  grid-area: NavGrid__AboutMe;
+}
+
+.NavGrid__MyWork {
+  grid-area: NavGrid__MyWork;
+}
+
+.NavGrid__Home {
+  grid-area: NavGrid__Home;
+}
+
+.NavGrid__Contact {
+  grid-area: NavGrid__Contact;
+}
+
 .AppWindow {
   display: flex;
   flex-direction: column;
@@ -73,6 +93,10 @@
   text-decoration: none;
 }
 
+.DropdownMenuContent__Link-L {
+  display: none;
+}
+
 .DropdownMenuContent__Item:hover {
   background-color: rgb(80, 214, 67);
   color: aliceblue;
@@ -105,7 +129,6 @@
   max-width: 100%;
   height: auto;
   width: auto\9;
-  // margin-left: 1em;
 }
 
 .Home__MainPictureContainer {
@@ -170,9 +193,83 @@
 $large: 1050px;
 
 @media (min-width: $large) {
+  .Home__MainText {
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
   .Navbar {
     width: 1000px;
     margin: auto;
+    height: 73px;
+    display: grid;
+    grid-template-columns: 18% 18% 32% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "NavGrid__Invisible NavGrid__AboutMe NavGrid__Home NavGrid__MyWork NavGrid__Contact";
+  }
+
+  .NavGrid__Invisible {
+    grid-area: NavGrid__Invisible;
+  }
+
+  .NavGrid__AboutMe {
+    grid-area: NavGrid__AboutMe;
+  }
+
+  .NavGrid__MyWork {
+    grid-area: NavGrid__MyWork;
+  }
+
+  .NavGrid__Home {
+    grid-area: NavGrid__Home;
+  }
+
+  .NavGrid__Contact {
+    grid-area: NavGrid__Contact;
+  }
+
+  .Navbar__MainPic {
+    width: 17em;
+  }
+
+  .Footer {
+    width: 1000px;
+    margin: auto;
+    margin-top: 80px;
+  }
+
+  .DropdownMenuContent__Link-L {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .DropdownMenuContent__Item-L {
+    font-family: "Rexila";
+    color: #2cff21;
+    // background-color: #2cff21;
+    border-radius: 10px;
+    padding: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    // max-height: fit-content;
+    font-size: 18px;
+
+    &:hover {
+      border: solid 1px #2cff21;
+      padding: 3px;
+      padding-right: 7px;
+      padding-left: 8px;
+      font-size: 20px;
+    }
+  }
+
+  .DropdownMenu__MenuIcon {
+    display: none;
+  }
+
+  .DropdownMenuContent {
+    display: none;
   }
 }
 //the color - 2cff21

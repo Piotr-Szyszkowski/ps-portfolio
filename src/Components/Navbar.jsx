@@ -4,12 +4,31 @@ import DropdownMenu from "./DropdownMenu";
 const Navbar = () => {
   return (
     <div className="Navbar">
-      <Link to="/">
+      <div className="DropdownMenuContent__Link-L NavGrid__Invisible"></div>
+      <Link
+        className="DropdownMenuContent__Link-L NavGrid__AboutMe"
+        to="/aboutme"
+      >
+        <p className="DropdownMenuContent__Item-L">About me</p>
+      </Link>
+      <Link className="NavGrid__Home" to="/">
         <img
           className="Navbar__MainPic"
           src="/Images/PS-batmfa-compres.png"
           alt="Piotr Szyszkowski Logo"
         />
+      </Link>
+      <Link
+        className="DropdownMenuContent__Link-L NavGrid__MyWork"
+        to="/mywork"
+      >
+        <p className="DropdownMenuContent__Item-L">My work</p>
+      </Link>
+      <Link
+        className="DropdownMenuContent__Link-L NavGrid__Contact"
+        to="/contact"
+      >
+        <p className="DropdownMenuContent__Item-L">Contact</p>
       </Link>
       <DropdownMenu />
     </div>
