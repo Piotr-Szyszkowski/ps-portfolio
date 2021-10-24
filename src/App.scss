@@ -34,7 +34,8 @@
   margin: 0;
 }
 
-.AboutMe__MainText {
+.AboutMe__MainText,
+.MyWork__MainText {
   font-family: "Rexila";
   color: white;
 }
@@ -46,12 +47,15 @@
   margin: 0px 5px 0px 5px;
 }
 
-.AboutMe__Title {
+.AboutMe__Title,
+.MyWork__Title {
   font-family: "Rexila";
   color: white;
+  text-align: center;
 }
 
-.AboutMe__SectionText {
+.AboutMe__SectionText,
+.MyWork__SectionText {
   font-family: "Rexila";
   color: white;
 }
@@ -195,6 +199,19 @@
 }
 
 .Home__MyStack {
+}
+
+.MyWork {
+  display: flex;
+  flex-direction: column;
+}
+
+.MyWork__Link {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: #2cff21;
+  }
 }
 
 .Navbar {
