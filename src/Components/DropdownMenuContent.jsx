@@ -21,11 +21,11 @@ const DropdownMenuContent = (props) => {
               My work
             </p>
           </Link>
-          <Link className="DropdownMenuContent__Link" to="/contact">
+          {/* <Link className="DropdownMenuContent__Link" to="/contact">
             <p onClick={hideDropdown} className="DropdownMenuContent__Item">
               Contact
             </p>
-          </Link>
+          </Link> */}
         </div>
       </div>
     );

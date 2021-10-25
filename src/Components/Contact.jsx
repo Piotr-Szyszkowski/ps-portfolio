@@ -1,8 +1,11 @@
 const Contact = () => {
   return (
-    <div>
-      <p>This will be Contact page</p>
-      <p>bla</p>
+    <div className="Contact">
+      <img
+        className="Contact__Icon"
+        src="Images/email_icon.png"
+        alt="Email icon"
+      />
     </div>
   );
 };

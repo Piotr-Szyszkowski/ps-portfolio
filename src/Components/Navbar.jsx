@@ -24,12 +24,7 @@ const Navbar = () => {
       >
         <p className="DropdownMenuContent__Item-L">My work</p>
       </Link>
-      <Link
-        className="DropdownMenuContent__Link-L NavGrid__Contact"
-        to="/contact"
-      >
-        <p className="DropdownMenuContent__Item-L">Contact</p>
-      </Link>
+      <div className="DropdownMenuContent__Link-L NavGrid__Invisible"></div>
       <DropdownMenu />
     </div>
   );

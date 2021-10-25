@@ -3,26 +3,6 @@
   src: url("./Fonts/rexlia_rg.otf") format("opentype");
 }
 
-.NavGrid__Invisible {
-  grid-area: NavGrid__Invisible;
-}
-
-.NavGrid__AboutMe {
-  grid-area: NavGrid__AboutMe;
-}
-
-.NavGrid__MyWork {
-  grid-area: NavGrid__MyWork;
-}
-
-.NavGrid__Home {
-  grid-area: NavGrid__Home;
-}
-
-.NavGrid__Contact {
-  grid-area: NavGrid__Contact;
-}
-
 .AppWindow {
   display: flex;
   flex-direction: column;
@@ -38,6 +18,7 @@
 .MyWork__MainText {
   font-family: "Rexila";
   color: white;
+  text-align: justify;
 }
 
 .AboutMe__Northcoders {
@@ -52,13 +33,36 @@
   font-family: "Rexila";
   color: white;
   text-align: center;
+  font-size: large;
+  margin: 0px 0px 0px 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 
 .AboutMe__SectionText,
 .MyWork__SectionText {
   font-family: "Rexila";
-  color: white;
+  color: #bfbfbf;
+  text-align: justify;
 }
+
+.AboutMe__Section,
+.MyWork__Section {
+  display: flex;
+  flex-flow: column;
+  margin: 25px 8px 10px 8px;
+}
+
+// .Contact {
+//   display: flex;
+//   flex-flow: column;
+//   justify-content: space-around;
+// }
+
+// .Contact__Icon {
+//   width: 50px;
+//   margin: auto;
+// }
 
 .DropdownMenu {
   position: relative;
@@ -194,7 +198,7 @@
 .Home__MyStack__Text {
   font-family: "Rexila";
   font-size: 20px;
-  color: aliceblue;
+  color: white;
   text-align: center;
 }
 
@@ -204,14 +208,53 @@
 .MyWork {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .MyWork__Link {
+  font-family: monospace;
+  font-size: large;
   text-decoration: none;
   color: white;
+  align-self: center;
   &:hover {
     color: #2cff21;
   }
+}
+
+.MyWork__Section__ImageLink {
+  align-self: center;
+  width: 90%;
+}
+
+.MyWork__Section__Image {
+  width: 100%;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+  &:hover {
+    border: #2cff21 solid 1px;
+  }
+}
+
+.MyWork__Section__SmallImage {
+  width: 95%;
+  border-radius: 5px;
+  &:hover {
+    border: #2cff21 solid 1px;
+  }
+}
+
+.MyWork__Section__SmallImage-Link {
+}
+
+.MyWork__Section__SmallImagesContainer {
+  width: 90%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
 }
 
 .Navbar {
@@ -224,12 +267,57 @@
   width: 12em;
 }
 
-$large: 1050px;
+.NavGrid__Invisible {
+  grid-area: NavGrid__Invisible;
+}
+
+.NavGrid__AboutMe {
+  grid-area: NavGrid__AboutMe;
+}
+
+.NavGrid__MyWork {
+  grid-area: NavGrid__MyWork;
+}
+
+.NavGrid__Home {
+  grid-area: NavGrid__Home;
+}
+
+.NavGrid__Contact {
+  grid-area: NavGrid__Contact;
+}
+$medium: 720px;
+$large: 950px;
+
+@media (min-width: $medium) {
+  .MyWork__Section__ImageLink {
+    width: 60%;
+  }
+}
 
 @media (min-width: $large) {
+  .AboutMe {
+    width: 900px;
+    justify-self: center;
+    margin: auto;
+  }
+
   .Home__MainText {
     margin-top: 25px;
     font-size: 25px;
+  }
+
+  .MyWork {
+    justify-self: center;
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .MyWork__Section {
+    width: 45%;
   }
 
   .Navbar {
@@ -268,7 +356,7 @@ $large: 1050px;
   }
 
   .Footer {
-    width: 1000px;
+    width: 900px;
     margin: auto;
     margin-top: 80px;
   }

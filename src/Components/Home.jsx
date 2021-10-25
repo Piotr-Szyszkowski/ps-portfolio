@@ -8,7 +8,7 @@ const Home = () => {
         <img
           className="Home__MainPicture"
           src="/Images/me_01.png"
-          alt="Picture of Piotr Smiling"
+          alt="Piotr Smiling"
         />
       </div>
       <div className="Home__MyStack">
