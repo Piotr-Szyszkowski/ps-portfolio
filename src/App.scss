@@ -39,8 +39,7 @@
   margin-block-end: 0px;
 }
 
-.AboutMe__SectionText,
-.MyWork__SectionText {
+.AboutMe__SectionText {
   font-family: "Rexila";
   color: #bfbfbf;
   text-align: justify;
@@ -139,7 +138,7 @@
   margin: 5px 5px 5px 5px;
 }
 .Footer__Link {
-  margin-left: 2vw;
+  margin-left: 40px;
 }
 
 .Home {
@@ -257,6 +256,14 @@
   margin: auto;
 }
 
+.MyWork__SectionText {
+  font-family: "Rexila";
+  color: #bfbfbf;
+  text-align: justify;
+  width: 90%;
+  align-self: center;
+}
+
 .Navbar {
   display: flex;
   justify-content: space-between;
@@ -293,6 +300,14 @@ $large: 950px;
   .MyWork__Section__ImageLink {
     width: 60%;
   }
+
+  .MyWork__SectionText {
+    width: 60%;
+  }
+
+  .MyWork__Section__SmallImagesContainer {
+    width: 60%;
+  }
 }
 
 @media (min-width: $large) {
@@ -318,6 +333,18 @@ $large: 950px;
 
   .MyWork__Section {
     width: 45%;
+  }
+
+  .MyWork__Section__ImageLink {
+    width: 80%;
+  }
+
+  .MyWork__SectionText {
+    width: 80%;
+  }
+
+  .MyWork__Section__SmallImagesContainer {
+    width: 80%;
   }
 
   .Navbar {
