@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ps-portfolio/static/css/main.3cd438d2.chunk.css",
+    "main.js": "/ps-portfolio/static/js/main.374c6f38.chunk.js",
+    "main.js.map": "/ps-portfolio/static/js/main.374c6f38.chunk.js.map",
+    "runtime-main.js": "/ps-portfolio/static/js/runtime-main.a891b8bd.js",
+    "runtime-main.js.map": "/ps-portfolio/static/js/runtime-main.a891b8bd.js.map",
+    "static/js/2.11433fda.chunk.js": "/ps-portfolio/static/js/2.11433fda.chunk.js",
+    "static/js/2.11433fda.chunk.js.map": "/ps-portfolio/static/js/2.11433fda.chunk.js.map",
+    "index.html": "/ps-portfolio/index.html",
+    "static/css/main.3cd438d2.chunk.css.map": "/ps-portfolio/static/css/main.3cd438d2.chunk.css.map",
+    "static/js/2.11433fda.chunk.js.LICENSE.txt": "/ps-portfolio/static/js/2.11433fda.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/ps-portfolio/static/media/rexlia_rg.d2977706.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a891b8bd.js",
+    "static/js/2.11433fda.chunk.js",
+    "static/css/main.3cd438d2.chunk.css",
+    "static/js/main.374c6f38.chunk.js"
+  ]
+}
